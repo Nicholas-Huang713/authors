@@ -1,0 +1,10 @@
+<div class="container text-center">
+    <a [routerLink]="['']">Home</a>
+    <h5>Add a new author:</h5>
+    <h3 class="text-danger">{{errors}}</h3>
+    <form (submit)="addAuthor()">
+        <p>Name: <input type="text" name="newAuthor.name" [(ngModel)]="newAuthor.name"></p>   
+        <br>
+        <button [routerLink]="['']">Cancel</button> | <button>Submit</button>
+    </form>
+</div>
